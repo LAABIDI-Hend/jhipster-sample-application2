@@ -1,0 +1,27 @@
+{
+  "jhipsterSampleApplication2App": {
+    "birthday": {
+      "home": {
+        "title": "Birthdays",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Birthday",
+        "createOrEditLabel": "Create or edit a Birthday",
+        "notFound": "No Birthdays found"
+      },
+      "created": "A new Birthday is created with identifier {{ param }}",
+      "updated": "A Birthday is updated with identifier {{ param }}",
+      "deleted": "A Birthday is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Birthday {{ id }}?"
+      },
+      "detail": {
+        "title": "Birthday"
+      },
+      "id": "ID",
+      "day": "Day",
+      "month": "Month",
+      "year": "Year",
+      "employee": "Employee"
+    }
+  }
+}

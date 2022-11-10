@@ -1,0 +1,40 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="birthday">
+      <h2 data-cy="birthdayDetailsHeading"><span jhiTranslate="jhipsterSampleApplication2App.birthday.detail.title">Birthday</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ birthday.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterSampleApplication2App.birthday.day">Day</span></dt>
+        <dd>
+          <span>{{ birthday.day }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterSampleApplication2App.birthday.month">Month</span></dt>
+        <dd>
+          <span>{{ birthday.month }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterSampleApplication2App.birthday.year">Year</span></dt>
+        <dd>
+          <span>{{ birthday.year }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/birthday', birthday.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>
